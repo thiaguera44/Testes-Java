@@ -1,0 +1,10 @@
+import random
+n = float(input("Tente adivinhar, de 0 a 5, o número do qual estou pensando: "))
+r = [0, 1, 2, 3, 4, 5]
+g = random.choice(r)
+if n == g:
+    print("Parabéns, você acertou!")
+else:
+    print("Você errou, tente novamente!")
+
+print("O número correto é {}".format(g))
